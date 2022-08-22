@@ -5,13 +5,16 @@ let lodoValueShow = document.querySelector("#lodoNumShow");
 
 
 lodoBtn.addEventListener("click",()=>{
-    function lodoRanNumber(max){
-        let intNum = Math.floor(Math.random()*(max-1)+1);
-        return Math.abs(intNum)
+    function lodoRanNumber(min,max){
+        let intNum = Math.floor(Math.random() * (max - min + 1))+1;
+        return Math.abs(intNum);
     }
-    let randomLodoNumber = lodoRanNumber(7);
+    let randomLodoNumber = lodoRanNumber(1,6);
     lodoValueShow.innerHTML = randomLodoNumber;
 });
 
 // lodo program end
+
+// কিভাবে আমরা আমাদের শ্রেণীকক্ষের সকলের নাম Alphabetically সাজাতে পারি ?
+
 
