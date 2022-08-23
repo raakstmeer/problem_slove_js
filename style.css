@@ -29,3 +29,21 @@ h6 {
     font-size: 40px;
     cursor: pointer;
 }
+
+#yearinput {
+    font-size: 20px;
+}
+
+#getleapBtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#sentenceInput {
+    font-size: 20px;
+}
+
+#vowelBtn {
+    font-size: 20px;
+    cursor: pointer;
+}

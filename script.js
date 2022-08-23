@@ -53,3 +53,45 @@ numSortBtn.addEventListener("click",()=>{
 
 // numeric sort program end
 
+// get leap year 
+
+let yearInput = document.querySelector("#yearinput");
+let getYearBtn = document.querySelector("#getleapBtn");
+let leapShow = document.querySelector("#leapyearShow");
+
+
+getYearBtn.addEventListener("click",()=>{
+    let year = yearInput.value;
+    if(year == ""){
+        alert("Hey Bro Please Input a year!");
+    }else if((year % 400 === 0) || ((year % 4 === 0 ) && (year % 100 !== 0))){
+        leapShow.innerHTML = year+" year is a leap year."
+    }else{
+        leapShow.innerHTML = year+" year is a not leap year."
+    };
+
+    yearInput.value = "";
+});
+
+// leap year program end 
+
+// কোন sentance এ কতগুলো vowel আছে তা নির্নয় করা যায় কিভাবে? 
+
+const vowels = ["A","E","I","O","U","a","e","i","o","u"];
+let sentenceInput = document.querySelector("#sentenceInput");
+let getVowelBtn = document.querySelector("#vowelBtn");
+let countVowelShow = document.querySelector("#vowelCheckResult");
+
+getVowelBtn.addEventListener("click",()=>{
+    let letters = Array.from(sentenceInput.value);
+    let count = 0;
+
+    letters.forEach((value)=>{
+        if(vowels.includes(value)){
+            count++;
+        }
+    });
+    countVowelShow.innerHTML = count;
+});
+
+// vowel cheaker program end
