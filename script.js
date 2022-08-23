@@ -95,3 +95,25 @@ getVowelBtn.addEventListener("click",()=>{
 });
 
 // vowel cheaker program end
+
+// কোন aaray থেকে কিভাবে duplicate নাম্বার বের করে আনতে পারি /
+
+const numbers = [1,3,4,5,3,2,7,8,9,4,1,5,10];
+
+const duplicates = numbers.filter(function(value,index,array){
+    return array.indexOf(value) !== index;
+});
+
+console.log(duplicates);
+
+// end duplicate
+
+// কোন aaray থেকে কিভাবে unique নাম্বার বের করে আনতে পারি /
+
+const uniNumbers = [1,3,4,5,3,2,7,8,9,4,1,5,10];
+
+const unique = uniNumbers.filter(function(value,index,array){
+    return array.indexOf(value) === index;
+});
+
+console.log(unique);
