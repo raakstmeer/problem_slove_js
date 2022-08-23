@@ -117,3 +117,5 @@ const unique = uniNumbers.filter(function(value,index,array){
 });
 
 console.log(unique);
+
+// Some practice end here and all code save in github
