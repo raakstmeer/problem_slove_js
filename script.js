@@ -31,5 +31,25 @@ sortBtn.addEventListener("click",()=>{
 
 // sort proggram end 
 
+//কিভাবে শেণীকক্ষের সকলের রোল ক্রম অনুযায়ী সাজাতে পারি ।
 
+let numUnSort = document.querySelector("#numunsort");
+let numSort = document.querySelector("#numsort");
+let numSortBtn = document.querySelector("#numsortbutton");
+
+const rolls = [5,4,7,6,8,9,1,3,2,10,14,15,12,11,13,17,19,20,18];
+
+numUnSort.innerHTML = rolls;
+
+numSortBtn.addEventListener("click",()=>{
+    /* let dosort = rolls.sort();     this programe not work properly we need self function */
+
+    let dosort = rolls.sort(function(a,b){
+        return a-b
+    })
+
+    numSort.innerHTML = dosort;
+})
+
+// numeric sort program end
 
